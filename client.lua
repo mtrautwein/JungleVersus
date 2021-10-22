@@ -3,7 +3,7 @@ love.graphics.setDefaultFilter("nearest")
 
 local socket = require('socket')
 udp = socket.udp()
-local server_IP, server_PORT = 'localhost', 12345--'169.254.41.18',12345
+local server_IP, server_PORT = 'localhost', 12345
 udp:setpeername(server_IP, server_PORT)
 udp:settimeout(0)
 
